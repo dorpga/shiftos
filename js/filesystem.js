@@ -4,5 +4,5 @@
  */
 
 function filesystem_init() {
-  console.log("Filesystem started");
+  console.log("Started filesystem");
 }
