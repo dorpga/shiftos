@@ -4,12 +4,24 @@
 */
 
 var game = {
-  firstrun: true
+  firstrun: true,
+  intro: function() {
+    Cookies.set("started", true);
+  },
+  debug: {
+    resetFirstRun: function() {
+      Cookies.set("started", false);
+      console.log("Finished reseting first run");
+    }
+  }
 }
 
 // Game init
 function game_init() {
-  game.firstRun = !Cookies.get('started'); // Check first run
-  if (game.firstRun) console.log("Game has not been started before"); // Print out if the game has been run before
+  game.firstRun = !Cookies.get("started"); // Check first run
+  if (game.firstRun) {
+    console.log("Game has not been started before"); // Print out if the game has been run before
+    game.intro();
+  }
   console.log("Started game"); // Finish game init
 }
