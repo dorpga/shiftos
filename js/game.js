@@ -6,11 +6,11 @@
 var game = {
   firstrun: true,
   intro: function() {
-    Cookies.set("started", true, {path: 'game'});
+    Cookies.set("started", true, {path: ''});
   },
   debug: {
     resetFirstRun: function() {
-      Cookies.remove("started", {path: 'game'});
+      Cookies.remove("started", {path: ''});
       console.log("Finished reseting first run");
     }
   }
@@ -18,7 +18,7 @@ var game = {
 
 // Game init
 function game_init() {
-  game.firstRun = !Cookies.get("started", {path: 'game'}); // Check first run
+  game.firstRun = !Cookies.get("started", {path: ''}); // Check first run
   if (game.firstRun) {
     console.log("Game has not been started before"); // Print out if the game has been run before
     game.intro();
