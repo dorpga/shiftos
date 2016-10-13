@@ -1,3 +1,7 @@
+.ui {
+  margin: 0;
+}
+
 .ui-dialog-message, .ui-dialog-icon {
   display: inline;
 }
