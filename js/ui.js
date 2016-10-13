@@ -17,7 +17,7 @@ var UI = {
         break;
     }
     $("#ui-display").append("<div class='ui-dialog' " + title + "' id='dialog-'" + nextDialogId + "'><div class='ui-dialog-icon'><img src='images/dialog/" + icon + "' height='64' width='64' alt='" + icon + "' />" + "</div><div class='ui-dialog-message'>" + message + "</div><div class='ui-dialog-buttons'>" + buttons + "</div></div>");
-    $("#dialog-" + nextDialogId).dialog();
+    $("#dialog-" + UI.nextDialogId).dialog();
     UI.nextDialogId++;
   },
   closeApp: function(app) {
