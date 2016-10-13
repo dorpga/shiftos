@@ -4,7 +4,7 @@
 */
 
 // Variable definitions
-var SHIFTOS_VERSION = "0.1.4";
+var SHIFTOS_VERSION = "0.1.5";
 
 // Kernel init
 function kernel_init() {
