@@ -10,14 +10,14 @@ var UI = {
       console.log("Started app " + app);
     });
   },
-  openDialog: function(title, message, icon, type) {
+  openDialog: function(title, message, type) {
     var buttons;
     switch (type) {
       case "message":
         buttons = "<button class='ui-dialog-button-submit'>OK</button>";
         break;
     }
-    $("#ui").append("<div class='ui-dialog' title='" + title + "' id='dialog-" + UI.nextDialogId + "'><div class='ui-dialog-icon'><img src='images/dialog/" + icon + "' height='64' width='64' alt='" + icon + "' />" + "</div><div class='ui-dialog-message'>" + message + "</div><div class='ui-dialog-buttons'>" + buttons + "</div></div>");
+    $("#ui").append("<div class='ui-dialog' title='" + title + "' id='dialog-" + UI.nextDialogId + "'><div class='ui-dialog-message'>" + message + "</div><div class='ui-dialog-buttons'>" + buttons + "</div></div>");
     $("#dialog-" + UI.nextDialogId).dialog();
     UI.nextDialogId++;
   },
