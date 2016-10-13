@@ -9,6 +9,6 @@
 .ui-taskbar {
   display: inline;
   background-color: #ccc;
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
