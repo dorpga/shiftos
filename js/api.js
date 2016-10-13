@@ -16,10 +16,10 @@ var api = {
     write: function(n, d) {
       filesystem.write(n, d);
     },
-    read: function(c) {
+    read: function(n) {
       return filesystem.read(n);
     },
-    delete: function(c) {
+    delete: function(n) {
       filesystem.delete(n);
     }
   }
