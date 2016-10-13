@@ -1,5 +1,3 @@
-console.log("Loaded helloworld");
-
 apps.helloworld = {
   main: function() {
     // ShiftOS bootstrap for graphical apps
