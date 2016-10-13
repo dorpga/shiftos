@@ -9,7 +9,6 @@ var UI = {
     $.getScript("apps/" + app + "/main.js", function(){
       console.log("Started app " + app);
     });
-    apps.
   },
   openDialog: function(title, message, icon, type) {
     var buttons;
