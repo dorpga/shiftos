@@ -4,7 +4,17 @@
 */
 
 // UI functions and settings
-var ui = {};
+var UI = {
+  openGuiApp: function(app) {
+  },
+  openCliApp: function(app) {
+  },
+  closeApp: function(app) {
+  },
+  toggleFullscreen: function(app) {
+  },
+  openApps: []
+};
 
 // Init ui
 function ui_init() {
