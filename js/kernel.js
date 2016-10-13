@@ -4,7 +4,7 @@
 */
 
 // Variable definitions
-const SHIFTOS_VERSION;
+var SHIFTOS_VERSION;
 
 // Kernel init
 function kernel_init() {
