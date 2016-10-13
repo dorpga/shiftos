@@ -6,9 +6,10 @@
 // UI functions and settings
 var UI = {
   openApp: function(app) {
-    $.getScript("app/" + app + "/main.js", function(){
+    $.getScript("apps/" + app + "/main.js", function(){
       console.log("Started app " + app);
     });
+    apps.
   },
   openDialog: function(title, message, icon, type) {
     var buttons;
