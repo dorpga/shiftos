@@ -11,4 +11,6 @@
   background-color: #ccc;
   position: absolute;
   bottom: 0;
+  width: 100vw;
+  margin: 0;
 }
