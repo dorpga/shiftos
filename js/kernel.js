@@ -4,6 +4,6 @@
 */
 
 function kernel_init() {
-  const SHIFTOS_VERSION = "1.0"
+  var SHIFTOS_VERSION = "1.0"
   console.log("Started kernel")
 }
