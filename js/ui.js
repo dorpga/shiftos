@@ -16,13 +16,16 @@ var UI = {
         buttons = "<button class='ui-dialog-button-submit'>OK</button>";
         break;
     }
-    $("#ui-display").append("<div class='ui-dialog' " + title + "'><div class='ui-dialog-icon'><img src='images/dialog/" + icon + "' height='64' width='64' alt='" + icon + "' />" + "</div><div class='ui-dialog-message'>" + message + "</div><div class='ui-dialog-buttons'>" + buttons + "</div></div>").dialog();
+    $("#ui-display").append("<div class='ui-dialog' " + title + "' id='dialog-'" + nextDialogId + "'><div class='ui-dialog-icon'><img src='images/dialog/" + icon + "' height='64' width='64' alt='" + icon + "' />" + "</div><div class='ui-dialog-message'>" + message + "</div><div class='ui-dialog-buttons'>" + buttons + "</div></div>");
+    $("#dialog-" + nextDialogId).dialog();
+    UI.nextDialogId++;
   },
   closeApp: function(app) {
   },
   toggleFullscreen: function(app) {
   },
-  openApps: []
+  openApps: [],
+  nextDialogId: 0
 };
 
 // Init ui
