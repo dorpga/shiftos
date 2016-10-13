@@ -9,6 +9,8 @@ var UI = {
   },
   openCliApp: function(app) {
   },
+  openDialog: function(title, message, buttons, image) {
+  },
   closeApp: function(app) {
   },
   toggleFullscreen: function(app) {
