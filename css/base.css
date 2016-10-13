@@ -1,3 +1,14 @@
-.ui-dialog-message, .ui-dialog-icon, .ui-taskbar * {
+.ui-dialog-message, .ui-dialog-icon {
   display: inline;
+}
+
+.ui-dalog-buttons {
+  background-color: #efefef;
+}
+
+.ui-taskbar {
+  display: inline;
+  background-color: #ccc;
+  position: relative;
+  bottom: 0;
 }
