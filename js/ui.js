@@ -14,7 +14,7 @@ var UI = {
     var buttons;
     switch (type) {
       case "message":
-        buttons = "<button class='ui-dialog-button-submit ui-dialog-titlebar-close'>OK</button>";
+        buttons = "<button class='ui-dialog-button-submit' onclick='$(\"#dialog-" + UI.nextDialogId + "\").dialog(\"close\")'>OK</button>";
         break;
     }
     $("#ui").append("<div class='ui-dialog' title='" + title + "' id='dialog-" + UI.nextDialogId + "'><div class='ui-dialog-message'>" + message + "</div><div class='ui-dialog-buttons'>" + buttons + "</div></div>");
