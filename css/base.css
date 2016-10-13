@@ -8,6 +8,8 @@
 
 .ui-dialog-buttons {
   background-color: #efefef;
+  position: relative;
+  bottom: 0;
 }
 
 .ui-taskbar {
