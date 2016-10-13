@@ -3,6 +3,7 @@
  * Copyright 2016 Carver Harrison
 */
 
+// Game structure
 var game = {
   firstrun: true,
   intro: function() {
