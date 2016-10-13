@@ -15,7 +15,8 @@ var filesystem = {
  },
  exists: function(n) {
   return eval("filesystem.fs." + n + " != null");
- }
+ },
+ fs: {}
 };
 
 function filesystem_init() {
