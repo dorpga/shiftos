@@ -13,6 +13,9 @@ var filesystem = {
  delete: function(n) {
   eval("filesystem.fs." + n + " = null");
  },
+ exists: function(n) {
+  return eval("filesystem.fs." + n + " != null");
+ }
 };
 
 function filesystem_init() {
