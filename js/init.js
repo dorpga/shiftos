@@ -4,4 +4,4 @@
 */
 
 kernel_init(); // Init the kernel
-console.log("ShiftOS " + SHIFTOS_VERSION + " Copyright 2016 Carver Harrison"); // Print out copyright notice
+console.log("ShiftOS " + SHIFTOS_VERSION); // Print out version
