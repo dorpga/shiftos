@@ -6,11 +6,11 @@
 var game = {
   firstrun: true,
   intro: function() {
-    Cookies.set("started", true);
+    Cookies.set("started", true, {});
   },
   debug: {
     resetFirstRun: function() {
-      Cookies.set("started", false);
+      Cookies.set("started", false, {});
       console.log("Finished reseting first run");
     }
   }
