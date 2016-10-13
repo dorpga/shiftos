@@ -5,16 +5,16 @@
 
 var filesystem = {
  write: function(n, d) {
-  eval("filesystem.fs" + n + " = '" + d + "';");
+  eval("filesystem.fs." + n + " = '" + d + "';");
  },
  read: function(n) {
-  return eval("filesystem.fs" + n);
+  return eval("filesystem.fs." + n);
  },
  delete: function(n) {
-  eval("filesystem.fs" + n + " = null");
+  eval("filesystem.fs." + n + " = null");
  },
  exists: function(n) {
-  return eval("filesystem.fs" + n + " != null");
+  return eval("filesystem.fs." + n + " != null");
  },
  fs: {}
 };
