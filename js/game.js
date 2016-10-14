@@ -39,6 +39,17 @@ var game = {
     }
   },
   shiftorium: {
+  }
+}
+
+// Game init
+function game_init() {
+  game.firstRun = !Cookies.get("started", {}); // Check first run
+  if (game.firstRun) {
+    console.log("Game has not been started before"); // Print out if the game has been run before
+    game.intro();
+  }
+  game.shiftorium =  {
     apps: {
       installed: Cookies.get("shiftorium").apps.installed,
       notinstalled: Cookies.get("shiftorium").apps.notinstalled,
@@ -59,15 +70,6 @@ var game = {
       installed: Cookies.get("shiftorium").groups.installed,
       notinstalled: Cookies.get("shiftorium").groups.notinstalled,
     }
-  }
-}
-
-// Game init
-function game_init() {
-  game.firstRun = !Cookies.get("started", {}); // Check first run
-  if (game.firstRun) {
-    console.log("Game has not been started before"); // Print out if the game has been run before
-    game.intro();
-  }
+  };
   console.log("Started game"); // Finish game init
 }
