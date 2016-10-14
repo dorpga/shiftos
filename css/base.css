@@ -33,6 +33,14 @@
   height: 90%;
 }
 
+.ui-shiftorium-upgrades, .ui-shiftorium-info {
+  width: 50%;
+}
+
+.ui-shiftorium-image {
+  width: 100%;
+}
+
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
   background-color: #eee;
 }
