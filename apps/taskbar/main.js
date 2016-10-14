@@ -22,7 +22,7 @@ apps.taskbar = {
          ui.openApp(cg.internalName);
       });
     }
-    $("#utmm").append("</li>");
+    $("#utmm").append("</li></ul>");
     
     $("#utmm").menu();
     $("#utmm").hide();
