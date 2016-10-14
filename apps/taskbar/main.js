@@ -13,17 +13,17 @@ apps.taskbar = {
                       </div>\
     ");
     
-    $("#utmm").append("<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</div>");
+    var o = "<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</div>");
     
     
     for (i = 0; i <= game.shiftorium.apps.length; i++) {
       var cg = game.shiftorium.apps.installed[i];
-      $("#ms-apps").append("<li><div class='ui-menuitem' id='ma-" + cg.internalName + "'>" + cg.name + "</div></li>");
+      o += "<li><div class='ui-menuitem' id='ma-" + cg.internalName + "'>" + cg.name + "</div></li>"
       $("#ma-" + cg.internalName).click(function() {
          ui.openApp(cg.internalName);
       });
     }
-    $("#utmm").append("</li></ul>");
+    $("#utmm").append(o + "</li></ul>");
     
     $("#utmm").menu();
     $("#utmm").hide();
