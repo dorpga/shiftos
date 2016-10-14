@@ -24,6 +24,14 @@ apps.terminal = {
             term.echo(UI.openApp(cmd[1]));
             break;
           case "debug":
+            switch (cmd[1]) {
+              case "clearsave":
+                game.clearSave();
+                break;
+              case "resetfirstrun":
+                game.debug.resetFirstRun();
+                break;
+            }
             break;
           case "help":
             term.echo("help - Command list");
