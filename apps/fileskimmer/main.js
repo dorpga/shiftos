@@ -8,12 +8,19 @@ apps.fileskimmer = {
         <button id='ipsb-'` + did + `' class='ui-fm-ip-sb'>Go</button>
       <div>
       <div class='ui-fm-fp'>
-        <ul class='ui-fm-fp-ul'>
+        <ul id='fpul-` + did + `class='ui-fm-fp-ul'>
         </ul>
       </div>
     </div>
    `);
    $('#app-' + did).dialog();
+   $('#ipsb-' + did).click(function() {
+     console.log("File Skimmer: User clicked on #ipsb in " + did);
+     for(i = 0; i <= $('#ipfi-' + did).value().length; i++) {
+      $('#fpul' + did).append("<li><a href='javascript:kernel.openFile(\"" + $('#ipfi-' + did).value() + "\")'>" + $('#ipfi-' + did).value() +"<a></li>");
+      console.log("File Skimmer: Found File " + $('#ipfi-' + did).value());
+     }
+   });
   }
 };
 
