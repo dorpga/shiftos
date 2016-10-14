@@ -43,7 +43,7 @@ apps.terminal = {
     }, {
         greetings: 'ShiftOS Terminal',
         name: 'tty' + apps.terminal.tty,
-        height: 200,
+        height: 400,
         prompt: apps.terminal.currentDirectory + '# '
     });
     $("#tty" + apps.terminal.tty).dialog();
