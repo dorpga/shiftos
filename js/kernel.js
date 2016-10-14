@@ -7,7 +7,7 @@
 var apps = {};
 
 // Variable definitions
-var SHIFTOS_VERSION = "0.3.2";
+var SHIFTOS_VERSION = "0.3.8";
 
 // Kernel init
 function kernel_init() {
