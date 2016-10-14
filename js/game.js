@@ -9,11 +9,55 @@ var game = {
   intro: function() {
     Cookies.set("started", true, {});
     Cookies.set("codepoints", 0, {});
+    Cookies.set("shiftorium", {
+      apps: {
+        installed: [],
+        notinstalled: []
+      },
+      games: {
+        installed: [],
+        notinstalled: []
+      },
+      features: {
+        installed: [],
+        notinstalled: []
+      },
+      shiftlets: {
+        installed: [],
+        notinstalled: []
+      },
+      groups: {
+        installed: [],
+        notinstalled: []
+      }
+    }, {});
   },
   debug: {
     resetFirstRun: function() {
       Cookies.remove("started", {});
       console.log("Finished reseting first run");
+    }
+  },
+  shiftorium: {
+    apps: {
+      installed: Cookies.get("shiftorium").apps.installed,
+      notinstalled: Cookies.get("shiftorium").apps.notinstalled,
+    },
+    games: {
+      installed: Cookies.get("shiftorium").games.installed,
+      notinstalled: Cookies.get("shiftorium").games.notinstalled,
+    },
+    features: {
+      installed: Cookies.get("shiftorium").features.installed,
+      notinstalled: Cookies.get("shiftorium").features.notinstalled,
+    },
+    shiftlets: {
+      installed: Cookies.get("shiftorium").shiftlets.installed,
+      notinstalled: Cookies.get("shiftorium").shiftlets.notinstalled,
+    },
+    groups: {
+      installed: Cookies.get("shiftorium").groups.installed,
+      notinstalled: Cookies.get("shiftorium").groups.notinstalled,
     }
   }
 }
