@@ -25,13 +25,6 @@ apps.shiftorium = {
             </td>
             <td>
               <div class='ui-shiftorium-info'>
-                  <img 
-                    src='/images/shiftorium/welcome.png'
-                    height='256'
-                    width='256'
-                    alt='Shiftorium Upgrade Image' 
-                    class='ui-shiftorium-image' 
-                  />
                   <h2 class='ui-shiftorium-info-title'>Welcome to the Shiftorium!</h3>
                   <p class='ui-shiftorium-info-text'>Select a upgrade for more info.</p>
               </div>
