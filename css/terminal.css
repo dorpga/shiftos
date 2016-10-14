@@ -72,7 +72,7 @@
     /*margin-top: 3px; */
 }
 .terminal .inverted, .cmd .inverted, .cmd .cursor.blink .command {
-    background-color: #000;
+    background-color: #aaa;
     color: #000;
 }
 .cmd .cursor.blink {
