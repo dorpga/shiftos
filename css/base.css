@@ -22,7 +22,7 @@
 }
 
 .ui-shiftorium: {
-  min-width: 50vw;
+  min-width: 75vw;
 }
 
 .ui-shiftorium-section * {
@@ -35,10 +35,6 @@
 
 .ui-shiftorium-upgrades, .ui-shiftorium-info {
   width: 50%;
-}
-
-.ui-shiftorium-image {
-  width: auto;
 }
 
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
