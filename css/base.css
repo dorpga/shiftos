@@ -34,9 +34,8 @@
   width: 400px;
 }
 
-.ui-shiftorium-section {
-  position: absolute;
-  top: 0;
+.ui-shiftorium * {
+  display: block;
 }
 
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
