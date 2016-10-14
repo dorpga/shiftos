@@ -32,6 +32,10 @@ var game = {
       }
     }, {});
   },
+  clearSave: function() {
+    Cookies.remove("", {});
+    console.log("Cleared save file");
+  },
   debug: {
     resetFirstRun: function() {
       Cookies.remove("started", {});
