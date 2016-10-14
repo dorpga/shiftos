@@ -38,7 +38,7 @@
 }
 
 .ui-shiftorium-image {
-  width: 100%;
+  width: auto;
 }
 
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
