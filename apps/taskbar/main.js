@@ -13,7 +13,7 @@ apps.taskbar = {
                       </div>\
     ");
     
-    $("#utmm").append("<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</li>");
+    $("#utmm").append("<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</div>");
     
     for (i = 0; i <= game.shiftorium.apps.length; i++) {
       var cg = game.shiftorium.apps.installed[i];
@@ -22,7 +22,7 @@ apps.taskbar = {
          ui.openApp(cg.internalName);
       });
     }
-    $("#utmm").append("</div></li>");
+    $("#utmm").append("</li>");
     
     $("#utmm").menu();
     $("#utmm").hide();
