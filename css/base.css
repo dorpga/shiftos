@@ -34,6 +34,11 @@
   width: 400px;
 }
 
+.ui-shiftorium-section {
+  position: fixed;
+  top: 0;
+}
+
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
 }
 
