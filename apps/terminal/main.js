@@ -7,7 +7,6 @@ apps.terminal = {
   tty: 0,
   main: function() {
     $("#ui").append("<div class='ui-terminal' id='tty" + apps.terminal.tty + "'></div>" );
-    function($, undefined) {
     $('#tty' + apps.terminal.tty).terminal(function(command, term) {
         var cmd = command.split(' ');
         switch (cmd[0]) {
