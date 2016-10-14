@@ -23,10 +23,10 @@ apps.taskbar = {
          ui.openApp(cg.internalName);
       });
     }
-    $("#utmm").append(o + "</li></ul>");
+    o += "</li></ul>"
+    $("#utmm").append(o);
     
     $("#utmm").menu();
-    $("#utmm").hide();
     $("#utmb").click(function () {
       $("#utmm").toggle();
     });
