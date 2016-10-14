@@ -14,9 +14,6 @@ apps.terminal = {
           case "ver":
             term.echo("ShiftOS Version " + SHIFTOS_VERSION);
             break;
-          case "tty":
-            term.echo($('#tty' + apps.terminal.tty).attr("id"));
-            break;
           case "js":
             term.echo(eval(cmd[1]));
             break;
@@ -35,7 +32,6 @@ apps.terminal = {
             break;
           case "help":
             term.echo("help - Command list");
-            term.echo("tty - Get current terminal session");
             term.echo("js - Run javscript command");
             term.echo("launch - Start application");
             term.echo("debug - Run debug commands");
