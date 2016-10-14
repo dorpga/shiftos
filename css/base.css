@@ -11,12 +11,11 @@
   bottom: 0;
 }
 
-.ui-taskbar {
+.ui-mtt {
   display: inline;
   background-color: #ccc;
   position: absolute;
   left: 0;
-  bottom: 0;
   width: 100vw;
   margin: 0;
 }
