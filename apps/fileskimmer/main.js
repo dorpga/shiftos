@@ -4,8 +4,8 @@ apps.fileskimmer = {
    $('#ui').append(`
     <div id='app-` + did + `' class='ui-fm'>
       <div class='ui-fm-ip'>
-        <input id='ipfi-'` + did + `' class='ui-fm-ip-fi' placeholder='Path'>
-        <button id='ipsb-'` + did + `' class='ui-fm-ip-sb'>Go</button>
+        <input id='ipfi-` + did + `' class='ui-fm-ip-fi' placeholder='Path'>
+        <button id='ipsb-` + did + `' class='ui-fm-ip-sb'>Go</button>
       <div>
       <div class='ui-fm-fp'>
         <ul id='fpul-` + did + `class='ui-fm-fp-ul'>
