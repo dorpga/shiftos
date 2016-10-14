@@ -71,7 +71,7 @@
     position: relative;
     /*margin-top: 3px; */
 }
-.terminal .inverted, .cmd .inverted, .cmd .cursor.blink {
+.terminal .inverted, .cmd .inverted, .cmd .cursor.blink .command {
     background-color: #aaa;
     color: #000;
 }
