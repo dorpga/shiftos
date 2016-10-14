@@ -13,7 +13,7 @@ apps.taskbar = {
                       </div>\
     ");
     
-    var o = "<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</div>");
+    var o = "<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</div>"
     
     
     for (i = 0; i <= game.shiftorium.apps.length; i++) {
