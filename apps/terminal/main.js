@@ -15,7 +15,7 @@ apps.terminal = {
             term.echo("ShiftOS Version " + SHIFTOS_VERSION);
             break;
           case "tty":
-            term.echo($('#tty' + apps.terminal.tty).terminal("name"));
+            term.echo($('#tty' + apps.terminal.tty).id());
             break;
           case "js":
             term.echo(eval(cmd[1]));
