@@ -4,6 +4,7 @@
 */
 
 apps.terminal = {
+  currentDirectory: "/",
   tty: 0,
   main: function() {
     $("#ui").append("<div class='ui-terminal' id='tty" + apps.terminal.tty + "'></div>" );
@@ -24,7 +25,7 @@ apps.terminal = {
         greetings: 'Javascript Interpreter',
         name: 'js_demo',
         height: 200,
-        prompt: 'js> '
+        prompt: apps.terminal.currentDirectory + '# '
     });
     $("#tty" + apps.terminal.tty).dialog();
     apps.terminal.tty++;
