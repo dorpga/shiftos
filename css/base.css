@@ -21,10 +21,10 @@
   margin: 0;
 }
 
-.ui-shiftorium-upgrades, .ui-shiftorium-info {
+.ui-shiftorium-section * {
   display: inline;
 }
 
-.ui-shiftorium-title *{
+.ui-shiftorium-title * {
   text-align: center;
 }
