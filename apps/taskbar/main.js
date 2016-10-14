@@ -24,7 +24,7 @@ apps.taskbar = {
     }
     $("#utmm").append("</li></ul>");
     
-    $("#utmm").menu();
+    //$("#utmm").menu();
     $("#utmm").hide();
     $("#utmb").click(function () {
       $("#utmm").toggle();
