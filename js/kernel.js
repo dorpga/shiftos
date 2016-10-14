@@ -7,7 +7,7 @@
 var apps = {}; // App Containers
 
 // Variable definitions
-var SHIFTOS_VERSION = "0.4.1"; // ShiftOS Version
+var SHIFTOS_VERSION = "0.4.2"; // ShiftOS Version
 
 // Kernel init
 function kernel_init() {
