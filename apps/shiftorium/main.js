@@ -14,11 +14,6 @@ apps.shiftorium = {
           <tr>
             <td>
               <div class='ui-shiftorium-upgrades'>
-                <div class='ui-shiftorium-section'>
-                  <button class='ui-shiftorium-section-button-dec'>-</button>
-                  <h3 id='ui-shiftorium-section-title'>Core</h3>
-                  <button class='ui-shiftorium-section-button-inc'>+</button>
-                </div>
                 <ul class='ui-shiftorium-upgrades-list'>
                 </ul>
               </div>
