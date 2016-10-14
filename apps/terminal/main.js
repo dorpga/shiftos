@@ -7,7 +7,7 @@ apps.terminal = {
   currentDirectory: "/",
   tty: 0,
   main: function() {
-    $("#ui").append("<div class='ui-terminal' id='tty" + apps.terminal.tty + "' style='background-color:black'></div>" );
+    $("#ui").append("<div class='ui-terminal' id='tty" + apps.terminal.tty + "' style='background-color:black' title='Terminal'></div>" );
     $('#tty' + apps.terminal.tty).terminal(function(command, term) {
         var cmd = command.split(' ');
         switch (cmd[0]) {
