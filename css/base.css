@@ -21,10 +21,6 @@
   margin: 0;
 }
 
-.ui-shiftorium: {
-  min-width: 700px;
-}
-
 .ui-shiftorium-section * {
   display: inline;
 }
