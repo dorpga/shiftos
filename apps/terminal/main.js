@@ -14,16 +14,24 @@ apps.terminal = {
           case "ver":
             term.echo("ShiftOS Version " + SHIFTOS_VERSION);
             break;
+          case "tty":
+            term.echo($('#tty' + apps.terminal.tty).terminal("name"));
+            break;
+          case "js":
+            term.echo(eval(cmd[1]));
+            break;
           case "help":
             term.echo("help - Command list");
+            term.echo("tty - Get current terminal session");
+            term.echo("js - Run Javscript Command");
             term.echo("ver - Version");
             break;
           default:
             term.echo("Unknown Command: " + cmd[0]);
         }
     }, {
-        greetings: 'Javascript Interpreter',
-        name: 'js_demo',
+        greetings: 'ShiftOS Terminal',
+        name: 'tty' + apps.terminal.tty,
         height: 200,
         prompt: apps.terminal.currentDirectory + '# '
     });
