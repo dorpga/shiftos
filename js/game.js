@@ -51,24 +51,24 @@ function game_init() {
   }
   game.shiftorium =  {
     apps: {
-      installed: Cookies.get("shiftorium").apps.installed,
-      notinstalled: Cookies.get("shiftorium").apps.notinstalled,
+      installed: JSON.parse(Cookies.get("shiftorium")).apps.installed,
+      notinstalled: JSON.parse(Cookies.get("shiftorium")).apps.notinstalled,
     },
     games: {
-      installed: Cookies.get("shiftorium").games.installed,
-      notinstalled: Cookies.get("shiftorium").games.notinstalled,
+      installed: JSON.parse(Cookies.get("shiftorium")).games.installed,
+      notinstalled: JSON.parse(Cookies.get("shiftorium")).games.notinstalled,
     },
     features: {
-      installed: Cookies.get("shiftorium").features.installed,
-      notinstalled: Cookies.get("shiftorium").features.notinstalled,
+      installed: JSON.parse(Cookies.get("shiftorium")).features.installed,
+      notinstalled: JSON.parse(Cookies.get("shiftorium")).features.notinstalled,
     },
     shiftlets: {
-      installed: Cookies.get("shiftorium").shiftlets.installed,
-      notinstalled: Cookies.get("shiftorium").shiftlets.notinstalled,
+      installed: JSON.parse(Cookies.get("shiftorium")).shiftlets.installed,
+      notinstalled: JSON.parse(Cookies.get("shiftorium")).shiftlets.notinstalled,
     },
     groups: {
-      installed: Cookies.get("shiftorium").groups.installed,
-      notinstalled: Cookies.get("shiftorium").groups.notinstalled,
+      installed: JSON.parse(Cookies.get("shiftorium")).groups.installed,
+      notinstalled: JSON.parse(Cookies.get("shiftorium")).groups.notinstalled,
     }
   };
   console.log("Started game"); // Finish game init
