@@ -34,11 +34,11 @@
   width: 400px;
 }
 
-.ui-shiftorium-upgrades, .ui-shiftorium-info {
+.ui-shiftorium-upgrades-list {
+  height: 500px;
 }
 
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
-  display: block;
 }
 
 .ui-shiftorium-title * {
