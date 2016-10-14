@@ -23,11 +23,14 @@ apps.terminal = {
           case "launch":
             term.echo(UI.openApp(cmd[1]));
             break;
+          case "debug":
+            break;
           case "help":
             term.echo("help - Command list");
             term.echo("tty - Get current terminal session");
             term.echo("js - Run javscript command");
             term.echo("launch - Start application");
+            term.echo("debug - Run debug commands");
             term.echo("ver - Version");
             break;
           default:
