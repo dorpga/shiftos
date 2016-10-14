@@ -18,7 +18,7 @@ apps.taskbar = {
     
     for (i = 0; i <= game.shiftorium.apps.length; i++) {
       var cg = game.shiftorium.apps.installed[i];
-      o += "<li><div class='ui-menuitem' id='ma-" + cg.internalName + "'>" + cg.name + "</div></li>"
+      o += "<li><div class='ui-menuitem' id='ma-" + cg.internalName + "'>" + cg.name + "</div>"
       $("#ma-" + cg.internalName).click(function() {
          ui.openApp(cg.internalName);
       });
