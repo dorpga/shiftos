@@ -1,7 +1,7 @@
 apps.taskbar = {
   main: function() {
     $("#ui").append("\
-                    <div class='ui-panel-top'>\
+                    <div class='ui-mtt'>\
                             <div class='ui-taskbar'>\
                               <div id='utm' class='ui-taskbar-menu'>\
                                 <div id='utmb' class='ui-taskbar-menu-button'>Menu</div>\
@@ -15,6 +15,7 @@ apps.taskbar = {
     
     $("#utmm").append("<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</div>");
     
+    
     for (i = 0; i <= game.shiftorium.apps.length; i++) {
       var cg = game.shiftorium.apps.installed[i];
       $("#ms-apps").append("<li><div class='ui-menuitem' id='ma-" + cg.internalName + "'>" + cg.name + "</div></li>");
@@ -24,7 +25,7 @@ apps.taskbar = {
     }
     $("#utmm").append("</li></ul>");
     
-    //$("#utmm").menu();
+    $("#utmm").menu();
     $("#utmm").hide();
     $("#utmb").click(function () {
       $("#utmm").toggle();
