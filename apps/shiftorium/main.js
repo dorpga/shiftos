@@ -1,6 +1,6 @@
 apps.shiftorium = {
   main: function() {
-    var did = kernel.random.base26(2);
+    var did = kernel.random.base26(4);
     $("#ui").append(`
       <div class='ui-shiftorium' id='app-` + did + `'>
         <div class='ui-shiftorium-title'>
