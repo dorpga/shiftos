@@ -16,7 +16,7 @@ apps.taskbar = {
     $("#utmm").append("<ul id='utml'><li><div class='ui-menusection' id='ms-apps'>Applications</li>");
     
     for (i = 0; i <= game.installedApps.length; i++) {
-      var cg = game.installedApps[i];
+      var cg = game.shiftorium.apps.installed[i];
       $("#ms-apps").append("<li><div class='ui-menuitem' id='ma-" + cg.internalName + "'>" + cg.name + "</div></li>");
       $("#ma-" + cg.internalName).click(function() {
          ui.openApp(cg.internalName);
