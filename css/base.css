@@ -29,16 +29,16 @@
   display: inline;
 }
 
-.ui-shiftorium-upgrades-list {
+.ui-shiftorium-upgrades {
   height: 90%;
+  width: 256px;
 }
 
-.ui-shiftorium-upgrades, .ui-shiftorium-info {
-  width: 100%;
+.ui-shiftorium-info {
+  width: 512px;
 }
 
 .ui-shiftorium-upgrades, .ui-shiftorium-info, .ui-shiftorium-buttons {
-  background-color: #eee;
 }
 
 .ui-shiftorium-title * {
