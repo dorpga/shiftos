@@ -27,6 +27,6 @@ apps.shiftorium = {
         </div>
       </div>
     `);
-    $('#app-" + did).dialog();
+    $("#app-" + did).dialog();
   }
 }
