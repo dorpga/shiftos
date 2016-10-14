@@ -21,8 +21,20 @@
   margin: 0;
 }
 
+.ui-shiftorium: {
+  min-width: 50vw;
+}
+
 .ui-shiftorium-section * {
   display: inline;
+}
+
+.ui-shiftorium-upgrade-list {
+  height: 90%;
+}
+
+.ui-shiftorium-upgrade-list, .ui-shiftorium-buttons {
+  background-color: #eee;
 }
 
 .ui-shiftorium-title * {
