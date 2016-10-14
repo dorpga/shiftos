@@ -29,11 +29,11 @@
   display: inline;
 }
 
-.ui-shiftorium-upgrade-list {
+.ui-shiftorium-upgrades-list {
   height: 90%;
 }
 
-.ui-shiftorium-upgrade-list, .ui-shiftorium-buttons {
+.ui-shiftorium-upgrades-list, .ui-shiftorium-buttons {
   background-color: #eee;
 }
 
