@@ -32,6 +32,11 @@
     z-index: 100;
 }
 */
+
+.command {
+    background-color: #000;
+}
+
 .cmd .clipboard {
     position: absolute;
     left: -16px;
