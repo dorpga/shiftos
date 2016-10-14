@@ -30,3 +30,5 @@ apps.shiftorium = {
     $("#app-" + did).dialog();
   }
 }
+
+apps.shiftorium.main();
