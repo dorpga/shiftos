@@ -33,3 +33,12 @@ var UI = {
 function ui_init() {
   console.log("Started ui"); // Finish init
 }
+
+function ui_loop() {
+  // Upgrade: UI Dialog Title
+  if(getUpgrade("ui_dialog_title")) {
+    $(".ui-dialog-title").show();
+  } else {
+    $(".ui-dialog-title").hide();
+  }
+}
