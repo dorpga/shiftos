@@ -41,3 +41,12 @@ apps.shiftorium = {
 }
 
 apps.shiftorium.main();
+for (i = 0; i < allUpgrades.length(); i++) {
+  for (j = 0; j < allUpgrades[i].length(); y++) {
+   $('ui-shiftorium-upgrades').append(`
+    <li>
+      <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[i][j] + `)">` + allUpgrades[i][j] + `</a>
+    </li>`
+   );
+  }
+}
