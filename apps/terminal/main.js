@@ -29,7 +29,7 @@ apps.terminal = {
           case "rslarge":
             $("#app-" + myId).dialog({
               height: 500,
-              width: 500
+              width: 720
             });
             break;
           case "rssmall":
