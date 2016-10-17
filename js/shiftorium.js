@@ -6,7 +6,7 @@
 // All upgrades
 var allUpgrades = [
     "shifter",
-    "fileskimmer"
+    "fileskimmer",
     "pong",
     "tetris",
     "ui_dialog_titlebar",
