@@ -41,7 +41,7 @@ apps.shiftorium = {
 }
 
 apps.shiftorium.main();
-for (i = 0; i < allUpgrades.length; i++) {
+for (i = 0; i < Object.getOwnPropertyNames(allUpgrades).length; i++) {
    $('.ui-shiftorium-upgrades-list').append(`
     <li>
       <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[i] + `)">` + allUpgrades[i].name + `</a>
