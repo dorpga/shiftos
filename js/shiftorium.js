@@ -4,13 +4,16 @@
 */
 
 // Enable an upgrade
-function enableUpgrade(name) {
+function enableUpgrade(cat, name) {
+  game.shiftorium[cat][name] = true;
 }
 
 // Disable an upgrade
-function disableUpgrade(name) {
+function disableUpgrade(cat, name) {
+  game.shiftorium[cat][name] = true;
 }
 
 // Check an upgrade's status
-function checkUpgrade(name) {
+function checkUpgrade(cat, name) {
+  return game.shiftorium[cat][name];
 }
