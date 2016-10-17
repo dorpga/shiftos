@@ -4,7 +4,7 @@
 */
 
 // All upgrades
-var allUpgrades = [
+var allUpgrades = {
     "shifter": {
         name: "Shifter",
         description: "Change the look of ShiftOS",
@@ -53,7 +53,7 @@ var allUpgrades = [
         group: "features",
         cost: 5
     }
-];
+};
 
 // Enable an upgrade
 function enableUpgrade(cat, name) {
