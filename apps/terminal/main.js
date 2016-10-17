@@ -27,7 +27,7 @@ apps.terminal = {
             $("#app-" + myId).attr("title") = cmd[1];
             break;
           case "rslarge":
-            $("#" + myId).dialog({
+            $("#app-" + myId).dialog({
               height: 800,
               width: 800
             });
