@@ -35,10 +35,27 @@ function ui_init() {
 }
 
 function ui_loop() {
-  // Upgrade: UI Dialog Title
   if(checkUpgrade("features", "ui_dialog_title")) {
     $(".ui-dialog-title").show();
   } else {
     $(".ui-dialog-title").hide();
+  }
+  
+  if(checkUpgrade("features", "ui_dialog_titlebar_close")) {
+    $(".ui-dialog-titlebar-close").show();
+  } else {
+    $(".ui-dialog-titlebar-close").hide();
+  }
+  
+  if(checkUpgrade("features", "ui_dialog_titlebar")) {
+    $(".ui-dialog-titlebar").show();
+  } else {
+    $(".ui-dialog-titlebar").hide();
+  }
+  
+  if(checkUpgrade("features", "ui_resizable_handle")) {
+    $(".ui-resizable-handle").show();
+  } else {
+    $(".ui-resizable-handle").hide();
   }
 }
