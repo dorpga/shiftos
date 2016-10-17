@@ -26,8 +26,17 @@ apps.terminal = {
           case "title":
             $("#" + myId).attr("title") = cmd[1];
             break;
-          case "fullscreen":
-            $("#" + myId).css('width','100vw').css('height', '100vh');
+          case "rslarge":
+            $("#" + myId).dialog({
+              height: 800,
+              width: 800
+            });
+            break;
+          case "rssmall":
+            $("#" + myId).dialog({
+              height: 100,
+              width: 100
+            });
             break;
           case "debug":
             switch (cmd[1]) {
@@ -46,7 +55,8 @@ apps.terminal = {
             term.echo("launch - Start application");
             term.echo("debug - Run debug commands");
             term.echo("move - Move terminal window");
-            term.echo("fullscreen - Fullscreen");
+            term.echo("rslarge - Make terminal larger");
+            term.echo("rssmall - Make terminal smaller");
             break;
           default:
             term.echo("Unknown Command: " + cmd[0]);
