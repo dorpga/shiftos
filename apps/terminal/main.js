@@ -20,6 +20,15 @@ apps.terminal = {
           case "launch":
             term.echo(UI.openApp(cmd[1]));
             break;
+          case "move":
+            $("#" + myId).position = {left: cmd[1], top: cmd[2]};
+            break;
+          case "title":
+            $("#" + myId).attr("title") = cmd[1];
+            break;
+          case "fullscreen":
+            $("#" + myId).css('width','100vw').css('height', '100vh');
+            break;
           case "debug":
             switch (cmd[1]) {
               case "clearsave":
@@ -32,10 +41,12 @@ apps.terminal = {
             break;
           case "help":
             term.echo("help - Command list");
+            term.echo("ver - Version");
             term.echo("js - Run javscript command");
             term.echo("launch - Start application");
             term.echo("debug - Run debug commands");
-            term.echo("ver - Version");
+            term.echo("move - Move terminal window");
+            term.echo("fullscreen - Fullscreen");
             break;
           default:
             term.echo("Unknown Command: " + cmd[0]);
