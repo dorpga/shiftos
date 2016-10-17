@@ -6,6 +6,7 @@
 // Game structure
 var game = {
   firstrun: true,
+  codepoints: 0,
   intro: function() {
     Cookies.set("started", true, {});
     Cookies.set("codepoints", 0, {});
@@ -42,6 +43,10 @@ var game = {
       console.log("Finished reseting first run");
     }
   },
+  save: function() {
+    Cookies.set("shiftorium", game.shiftorium, {}); // Save shiftorium data
+    Cookies.set("codepoints", game.codepoints, {}); // Save codepoints
+  },
   shiftorium: {
   }
 }
@@ -75,5 +80,6 @@ function game_init() {
       notinstalled: JSON.parse(Cookies.get("shiftorium")).groups.notinstalled,
     }
   };
+  game.codepoints = Cookies.get("codepoints"); // Update codepoints
   console.log("Started game"); // Finish game init
 }
