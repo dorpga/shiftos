@@ -36,7 +36,7 @@ function ui_init() {
 
 function ui_loop() {
   // Upgrade: UI Dialog Title
-  if(getUpgrade("ui_dialog_title")) {
+  if(checkUpgrade("ui_dialog_title")) {
     $(".ui-dialog-title").show();
   } else {
     $(".ui-dialog-title").hide();
