@@ -5,17 +5,54 @@
 
 // All upgrades
 var allUpgrades = [
-    "shifter",
-    "fileskimmer",
-    "pong",
-    "tetris",
-    "ui_dialog_titlebar",
-    "ui_dialog_title",
-    "ui_dialog_titlebar_close",
-    "ui_resizable_handle",
-    "apps",
-    "games",
-    "features"
+    "shifter": {
+        name: "Shifter",
+        description: "Change the look of ShiftOS",
+        group: "apps",
+        cost: 25
+    },
+    "fileskimmer": {
+        name: "File Skimmer",
+        description: "Just a file manager",
+        group: "apps",
+        cost: 25
+    },
+    "pong": {
+        name: "Pong",
+        description: "Earn codepoints by playing pong",
+        group: "games",
+        cost: 10
+    },
+    "tetris": {
+        name: "Tetris",
+        description: "Earn codepoints by playing tetris",
+        group: "games",
+        cost: 10
+    },
+    "ui_dialog_titlebar": {
+        name: "Window Titlebar",
+        description: "Titlebar for windows and dialogs",
+        group: "features",
+        cost: 5
+    },
+    "ui_dialog_title": {
+        name: "Window Title",
+        description: "Titles for windows and dialogs",
+        group: "features",
+        cost: 5
+    },
+    "ui_dialog_titlebar_close": {
+        name: "Window Close Button",
+        description: "Close windows with a button",
+        group: "features",
+        cost: 5
+    },
+    "ui_resizable_handle": {
+        name: "Resize Handle",
+        description: "Resize windows",
+        group: "features",
+        cost: 5
+    }
 ];
 
 // Enable an upgrade
