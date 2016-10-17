@@ -18,7 +18,7 @@ var kernel = {
 };
 
 // Variable definitions
-var SHIFTOS_VERSION = "0.5.0"; // ShiftOS Version
+var SHIFTOS_VERSION = "0.5.2"; // ShiftOS Version
 
 // Kernel init
 function kernel_init() {
