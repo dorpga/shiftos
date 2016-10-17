@@ -44,8 +44,8 @@ apps.shiftorium.main();
 for (i = 0; i < allUpgrades.length; i++) {
    $('.ui-shiftorium-upgrades-list').append(`
     <li>
-      <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[i] + `)">` + allUpgrades[i] + `</a>
+      <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[i] + `)">` + allUpgrades[i].name + `</a>
     </li>`
    );
-   console.log("Added " + allUpgrades[i] + " to shiftorium list");
+   console.log("Added " + allUpgrades[i].name + " to shiftorium list");
 }
