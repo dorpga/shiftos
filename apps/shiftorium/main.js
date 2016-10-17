@@ -42,7 +42,7 @@ apps.shiftorium = {
 
 apps.shiftorium.main();
 for (i = 0; i < allUpgrades.length; i++) {
-   $('ui-shiftorium-upgrades').append(`
+   $('.ui-shiftoriums-upgrade-list').append(`
     <li>
       <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[i] + `)">` + allUpgrades[i] + `</a>
     </li>`
