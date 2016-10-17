@@ -4,7 +4,7 @@
 */
 
 // All upgrades
-var allUpgrades = {
+var allUpgrades = [
     "shifter",
     "fileskimmer"
     "pong",
@@ -16,7 +16,7 @@ var allUpgrades = {
     "apps",
     "games",
     "features"
-};
+];
 
 // Enable an upgrade
 function enableUpgrade(cat, name) {
