@@ -37,6 +37,11 @@ apps.shiftorium = {
       </div>
     `);
     $("#app-" + did).dialog();
+  },
+  showUpgrade: function(o) {
+    apps.shiftorium.selectedUpgrade = o.iname;
+    $('.ui-shiftorium-info-title').innerText(o.name);
+    $('.ui-shiftorium-info-text').innerText(o.description);
   }
 }
 
@@ -44,7 +49,7 @@ apps.shiftorium.main();
 for (i = 0; i < Object.getOwnPropertyNames(allUpgrades).length; i++) {
    $('.ui-shiftorium-upgrades-list').append(`
     <li>
-      <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].iname + `)">` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + `</a>
+      <a href="javascript:apps.shiftorium.showUpgrade(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[` + i + `]] + )">` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + `</a>
     </li>`
    );
    console.log("Added " + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + " to shiftorium list");
