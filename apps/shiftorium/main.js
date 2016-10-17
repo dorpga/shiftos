@@ -40,8 +40,8 @@ apps.shiftorium = {
   },
   showUpgrade: function(o) {
     apps.shiftorium.selectedUpgrade = o.iname;
-    $('.ui-shiftorium-info-title').innerText(o.name);
-    $('.ui-shiftorium-info-text').innerText(o.description);
+    $('.ui-shiftorium-info-title').html(o.name);
+    $('.ui-shiftorium-info-text').html(o.description);
   }
 }
 
