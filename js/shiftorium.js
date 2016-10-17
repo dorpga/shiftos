@@ -3,6 +3,29 @@
  * Copyright 2016 Carver Harrison
 */
 
+// All upgrades
+var allUpgrades = {
+  apps: [
+    "shifter",
+    "fileskimmer"
+  ],
+  games: [
+    "pong",
+    "tetris",
+  ],
+  features: [
+    "ui_dialog_titlebar",
+    "ui_dialog_title",
+    "ui_dialog_titlebar_close",
+    "ui_resizable_handle"
+  ],
+  groups: [
+    "apps",
+    "games",
+    "features"
+  ]
+};
+
 // Enable an upgrade
 function enableUpgrade(cat, name) {
   game.shiftorium[cat][name] = true;
