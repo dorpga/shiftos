@@ -48,5 +48,6 @@ for (i = 0; i < allUpgrades.length; i++) {
       <a href="javascript:apps.shiftorium.showUpgrade(` + allUpgrades[i][j] + `)">` + allUpgrades[i][j] + `</a>
     </li>`
    );
+    console.log("Added " + allUpgrades[i][j] + " to shiftorium list");
   }
 }
