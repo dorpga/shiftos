@@ -21,10 +21,10 @@ apps.terminal = {
             term.echo(UI.openApp(cmd[1]));
             break;
           case "move":
-            $("#" + myId).position = {left: cmd[1], top: cmd[2]};
+            $("#app-" + myId).position = {left: cmd[1], top: cmd[2]};
             break;
           case "title":
-            $("#" + myId).attr("title") = cmd[1];
+            $("#app-" + myId).attr("title") = cmd[1];
             break;
           case "rslarge":
             $("#" + myId).dialog({
@@ -33,7 +33,7 @@ apps.terminal = {
             });
             break;
           case "rssmall":
-            $("#" + myId).dialog({
+            $("#app-" + myId).dialog({
               height: 100,
               width: 100
             });
