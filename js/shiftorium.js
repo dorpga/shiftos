@@ -12,7 +12,7 @@ var allUpgrades = [
     "ui_dialog_titlebar",
     "ui_dialog_title",
     "ui_dialog_titlebar_close",
-    "ui_resizable_handle"
+    "ui_resizable_handle",
     "apps",
     "games",
     "features"
