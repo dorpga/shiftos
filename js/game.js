@@ -24,7 +24,7 @@ var game = {
     };
     for (i = 0; i < allUpgrades.constructor.getOwnPropertyNames().length; i++) {
       game.shiftorium[allUpgrades[allUpgrades.constructor.getOwnPropertyNames()[i]].group][allUpgrades[allUpgrades.constructor.getOwnPropertyNames()[i]].iname] = false;
-      console.log(allUpgrades[allUpgrades.constructor.getOwnPropertyNames()[i]].group] + "." + allUpgrades[allUpgrades.constructor.getOwnPropertyNames()[i]].iname);
+      console.log(allUpgrades[allUpgrades.constructor.getOwnPropertyNames()[i]].group + "." + allUpgrades[allUpgrades.constructor.getOwnPropertyNames()[i]].iname);
     }
   },
   clearSave: function() {
