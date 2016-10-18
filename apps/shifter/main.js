@@ -22,13 +22,11 @@ apps.shifter = {
               </td>
             </tr>
           </tbody>
-          <tfoot>
-            <div class='shifter-buttons'>
-              <button onclick='apps.shifter.apply()'>Apply</button>
-              <button onclick='apps.shifter.reset()'>Reset</button>
-            </div>
-          </tfoot>
         </table>
+        <div class='shifter-buttons'>
+          <button onclick='apps.shifter.apply()'>Apply</button>
+          <button onclick='apps.shifter.reset()'>Reset</button>
+        </div>
       </div>
     `);
     $("#app-" + myId).dialog();
