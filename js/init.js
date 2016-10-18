@@ -11,4 +11,5 @@ console.log("ShiftOS " + SHIFTOS_VERSION); // Print out version
 UI.openApp("terminal");
 setInterval(function() {
   ui_loop();
+  kernel_loop();
 }, 250)
