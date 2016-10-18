@@ -46,9 +46,13 @@ apps.shiftorium = {
     $('.ui-shiftorium-info-text').html(o.description);
     $('.ui-shiftorium-info-cost').html(o.cost + " Codepoints");
     $('.ui-shiftorium-button-buy').click(function () {
-      enableUpgrade(o.group, o.iname);
-      api.save.codepoints.remove(o.cost);
-      $('.ui-shiftorium-info-cost').html("Purchaced");
+      if (api.save.codepoints.get() >= o.cost) {
+        enableUpgrade(o.group, o.iname);
+        api.save.codepoints.remove(o.cost);
+        $('.ui-shiftorium-info-cost').html("Purchaced");
+      } else {
+        UI.openDialog("Not enough codepoints", "You don't have enough codepoints to buy this upgrade.", "message");
+      }
     });
   }
 }
