@@ -30,5 +30,6 @@ apps.shifter = {
         </table>
       </div>
     `);
+    $("#app-" + myId).dialog();
   }
 }
