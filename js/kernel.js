@@ -24,3 +24,8 @@ var SHIFTOS_VERSION = "0.5.2"; // ShiftOS Version
 function kernel_init() {
   console.log("Started kernel");
 }
+
+function kernel_loop() {
+  $('.t-codepoints').html(api.save.codepoints.get());
+  $('.t-version').html(SHIFTOS_VERSION);
+}
