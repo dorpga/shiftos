@@ -8,9 +8,9 @@ var game = {
   firstrun: true,
   codepoints: 0,
   intro: function() {
-    Cookies.set("started", true, {});
-    Cookies.set("codepoints", 0, {});
-    Cookies.set("shiftorium", {
+    localStorage.started = true;
+    localStorage.codepoints = 0;
+    localStorage.shiftorium = {
       apps: {
       },
       games: {
@@ -21,21 +21,21 @@ var game = {
       },
       groups: {
       }
-    }, {});
+    };
   },
   clearSave: function() {
-    Cookies.remove("", {});
+    localStorage.clear();
     console.log("Cleared save file");
   },
   debug: {
     resetFirstRun: function() {
-      Cookies.remove("started", {});
+      localStorae.firstRun = false;
       console.log("Finished reseting first run");
     }
   },
   save: function() {
-    Cookies.set("shiftorium", game.shiftorium, {}); // Save shiftorium data
-    Cookies.set("codepoints", game.codepoints, {}); // Save codepoints
+    localStorage.shiftorium = game.shiftorium; // Save shiftorium data
+    localStorage.codepoints = game.codepoints; // Save codepoints
   },
   shiftorium: {
   }
@@ -43,18 +43,18 @@ var game = {
 
 // Game init
 function game_init() {
-  game.firstRun = !Cookies.get("started", {}); // Check first run
+  game.firstRun = !localStorage.started; // Check first run
   if (game.firstRun) {
     console.log("Game has not been started before"); // Print out if the game has been run before
     game.intro();
   }
   game.shiftorium =  {
-    apps: JSON.parse(Cookies.get("shiftorium")).apps,
-    games: JSON.parse(Cookies.get("shiftorium")).games,
-    features: JSON.parse(Cookies.get("shiftorium")).features,
-    shiftlets: JSON.parse(Cookies.get("shiftorium")).shiftlets,
-    groups: JSON.parse(Cookies.get("shiftorium")).groups
+    apps: JSON.parse(localStorage.shiftorium).apps,
+    games: JSON.parse(localStorage.shiftorium).games,
+    features: JSON.parse(localStorage.shiftorium).features,
+    shiftlets: JSON.parse(localStorage.shiftorium).shiftlets,
+    groups: JSON.parse(localStorage.shiftorium).groups
   };
-  game.codepoints = Cookies.get("codepoints"); // Update codepoints
+  game.codepoints = localStorage.codepoints; // Update codepoints
   console.log("Started game"); // Finish game init
 }
