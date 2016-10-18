@@ -22,7 +22,7 @@ apps.shiftorium = {
               <div class='ui-shiftorium-info'>
                   <h2 class='ui-shiftorium-info-title'>Welcome to the Shiftorium!</h3>
                   <p class='ui-shiftorium-info-text'>Select a upgrade for more info.</p>
-                  <h3 class='ui-shiftorium-info-cost'>0 Codepoints</h3>
+                  <span class='ui-shiftorium-info-cost'>0 Codepoints</span>
               </div>
             </td>
           </tr>
