@@ -18,14 +18,15 @@ apps.shifter = {
               </td>
               <td>
                 <ul id='st-` + myId + `' class='shifter-settings'>
+                </ul>
               </td>
             </tr>
           </tbody>
           <tfoot>
-            <span>
-              <button onlick='apps.shifter.apply()'>Apply</button>
-              <button onlick='apps.shifter.reset()'>Reset</button>
-            </span>
+            <div class='shifter-buttons'>
+              <button onclick='apps.shifter.apply()'>Apply</button>
+              <button onclick='apps.shifter.reset()'>Reset</button>
+            </div>
           </tfoot>
         </table>
       </div>
