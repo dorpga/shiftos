@@ -49,11 +49,11 @@ function game_init() {
     game.intro();
   }
   game.shiftorium =  {
-    apps: JSON.parse(localStorage.shiftorium).apps,
-    games: JSON.parse(localStorage.shiftorium).games,
-    features: JSON.parse(localStorage.shiftorium).features,
-    shiftlets: JSON.parse(localStorage.shiftorium).shiftlets,
-    groups: JSON.parse(localStorage.shiftorium).groups
+    apps: localStorage.shiftorium.apps,
+    games: localStorage.shiftorium.games,
+    features: localStorage.shiftorium.features,
+    shiftlets: localStorage.shiftorium.shiftlets,
+    groups: localStorage.shiftorium.groups
   };
   game.codepoints = localStorage.codepoints; // Update codepoints
   console.log("Started game"); // Finish game init
