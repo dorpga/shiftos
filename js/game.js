@@ -49,26 +49,11 @@ function game_init() {
     game.intro();
   }
   game.shiftorium =  {
-    apps: {
-      installed: JSON.parse(Cookies.get("shiftorium")).apps.installed,
-      notinstalled: JSON.parse(Cookies.get("shiftorium")).apps.notinstalled,
-    },
-    games: {
-      installed: JSON.parse(Cookies.get("shiftorium")).games.installed,
-      notinstalled: JSON.parse(Cookies.get("shiftorium")).games.notinstalled,
-    },
-    features: {
-      installed: JSON.parse(Cookies.get("shiftorium")).features.installed,
-      notinstalled: JSON.parse(Cookies.get("shiftorium")).features.notinstalled,
-    },
-    shiftlets: {
-      installed: JSON.parse(Cookies.get("shiftorium")).shiftlets.installed,
-      notinstalled: JSON.parse(Cookies.get("shiftorium")).shiftlets.notinstalled,
-    },
-    groups: {
-      installed: JSON.parse(Cookies.get("shiftorium")).groups.installed,
-      notinstalled: JSON.parse(Cookies.get("shiftorium")).groups.notinstalled,
-    }
+    apps: JSON.parse(Cookies.get("shiftorium")).apps,
+    games: JSON.parse(Cookies.get("shiftorium")).games,
+    features: JSON.parse(Cookies.get("shiftorium")).features,
+    shiftlets: JSON.parse(Cookies.get("shiftorium")).shiftlets,
+    groups: JSON.parse(Cookies.get("shiftorium")).groups
   };
   game.codepoints = Cookies.get("codepoints"); // Update codepoints
   console.log("Started game"); // Finish game init
