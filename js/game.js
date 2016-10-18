@@ -52,14 +52,15 @@ function game_init() {
   if (game.firstRun) {
     console.log("Game has not been started before"); // Print out if the game has been run before
     game.intro();
+  } else {
+    game.shiftorium =  {
+      apps: localStorage.shiftorium.apps,
+      games: localStorage.shiftorium.games,
+      features: localStorage.shiftorium.features,
+      shiftlets: localStorage.shiftorium.shiftlets,
+      groups: localStorage.shiftorium.groups
+    };
+    game.codepoints = localStorage.codepoints; // Update codepoints
   }
-  game.shiftorium =  {
-    apps: localStorage.shiftorium.apps,
-    games: localStorage.shiftorium.games,
-    features: localStorage.shiftorium.features,
-    shiftlets: localStorage.shiftorium.shiftlets,
-    groups: localStorage.shiftorium.groups
-  };
-  game.codepoints = localStorage.codepoints; // Update codepoints
   console.log("Started game"); // Finish game init
 }
