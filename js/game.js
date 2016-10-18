@@ -12,24 +12,14 @@ var game = {
     Cookies.set("codepoints", 0, {});
     Cookies.set("shiftorium", {
       apps: {
-        installed: [],
-        notinstalled: []
       },
       games: {
-        installed: [],
-        notinstalled: []
       },
       features: {
-        installed: [],
-        notinstalled: []
       },
       shiftlets: {
-        installed: [],
-        notinstalled: []
       },
       groups: {
-        installed: [],
-        notinstalled: []
       }
     }, {});
   },
