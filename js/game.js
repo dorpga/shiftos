@@ -10,7 +10,7 @@ var game = {
   intro: function() {
     localStorage.started = true;
     localStorage.codepoints = 0;
-    localStorage.shiftorium = {
+    localStorage.shiftorium = JSON.stringify({
       apps: {
         "dummy": true,
       },
@@ -26,7 +26,7 @@ var game = {
       groups: {
         "dummy": true,
       }
-    };
+    });
   },
   clearSave: function() {
     localStorage.clear();
@@ -39,7 +39,7 @@ var game = {
     }
   },
   save: function() {
-    localStorage.shiftorium = game.shiftorium; // Save shiftorium data
+    localStorage.shiftorium = JSON.stringify(game.shiftorium); // Save shiftorium data
     localStorage.codepoints = game.codepoints; // Save codepoints
   },
   shiftorium: {
@@ -54,11 +54,11 @@ function game_init() {
     game.intro();
   } else {
     game.shiftorium =  {
-      apps: localStorage.shiftorium.apps,
-      games: localStorage.shiftorium.games,
-      features: localStorage.shiftorium.features,
-      shiftlets: localStorage.shiftorium.shiftlets,
-      groups: localStorage.shiftorium.groups
+      apps: JSON.parse(localStorage.shiftorium.apps),
+      games: JSON.parse(localStorage.shiftorium.games),
+      features: JSON.parse(localStorage.shiftorium.features),
+      shiftlets: JSON.parse(localStorage.shiftorium.shiftlets),
+      groups: JSON.parse(localStorage.shiftorium.groups)
     };
     game.codepoints = localStorage.codepoints; // Update codepoints
   }
