@@ -1,7 +1,7 @@
 apps.shifter = {
   main: function() {
     var myId = kernel.random.base26(4);
-    $(".ui").append(`
+    $("#ui").append(`
       <div id='app-` + myId + `'>
         <table>
           <thead>
