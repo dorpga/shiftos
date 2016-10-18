@@ -33,3 +33,5 @@ apps.shifter = {
     $("#app-" + myId).dialog();
   }
 }
+
+apps.shifter.main();
