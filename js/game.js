@@ -12,19 +12,19 @@ var game = {
     localStorage.codepoints = 0;
     localStorage.shiftorium = {
       apps: {
-        "dummy": true;
+        "dummy": true,
       },
       games: {
-        "dummy": true;
+        "dummy": true,
       },
       features: {
-        "dummy": true;
+        "dummy": true,
       },
       shiftlets: {
-        "dummy": true;
+        "dummy": true,
       },
       groups: {
-        "dummy": true;
+        "dummy": true,
       }
     };
   },
