@@ -59,7 +59,7 @@ apps.shiftorium = {
 
 apps.shiftorium.main();
 for (i = 0; i < Object.getOwnPropertyNames(allUpgrades).length; i++) {
-  if (!checkUpgrade(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].iname)) {
+  if (!checkUpgrade(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].group, allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].iname)) {
      $('.ui-shiftorium-upgrades-list').append(`
       <li>
         <a href="javascript:apps.shiftorium.showUpgrade(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[` + i + `]])">` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + `</a>
