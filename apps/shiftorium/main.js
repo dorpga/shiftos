@@ -31,6 +31,7 @@ apps.shiftorium = {
               <div class='ui-shiftorium-buttons'>
                 <button class='btn ui-shiftorium-button ui-shiftorium-button-buy'>Buy</button>
                 <button class='btn ui-shiftorium-button ui-shiftorium-button-exit'>Exit</button>
+                <h4 class='ui-shiftorium-codepoints'><span class='t-codepoints'></span> Codepoints</h4>
               </div>
             </td>
           </tr>
