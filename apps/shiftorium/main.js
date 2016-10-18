@@ -43,9 +43,9 @@ apps.shiftorium = {
     apps.shiftorium.selectedUpgrade = o.iname;
     $('.ui-shiftorium-info-title').html(o.name);
     $('.ui-shiftorium-info-text').html(o.description);
-    $('.ui-shiftorium-info-cost').html(o.cost);
+    $('.ui-shiftorium-info-cost').html(o.cost + " Codepoints");
     $('.ui-shiftorium-button-buy').click(function () {
-      enableUpgrade(o.iname);
+      enableUpgrade(o.group, o.iname);
       api.codepoints.remove(o.cost);
       $('.ui-shiftorium-info-cost').html("Purchaced");
     });
