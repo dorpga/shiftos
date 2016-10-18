@@ -22,6 +22,7 @@ apps.shiftorium = {
               <div class='ui-shiftorium-info'>
                   <h2 class='ui-shiftorium-info-title'>Welcome to the Shiftorium!</h3>
                   <p class='ui-shiftorium-info-text'>Select a upgrade for more info.</p>
+                  <h3 class='ui-shiftorium-info-cost'>0 Codepoints</h3>
               </div>
             </td>
           </tr>
@@ -42,6 +43,12 @@ apps.shiftorium = {
     apps.shiftorium.selectedUpgrade = o.iname;
     $('.ui-shiftorium-info-title').html(o.name);
     $('.ui-shiftorium-info-text').html(o.description);
+    $('.ui-shiftorium-info-cost').html(o.cost);
+    $('.ui-shiftorium-button-buy').click(function () {
+      enableUpgrade(o.iname);
+      api.codepoints.remove(o.cost);
+      $('.ui-shiftorium-info-cost').html("Purchaced");
+    });
   }
 }
 
