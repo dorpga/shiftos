@@ -63,6 +63,7 @@ for (i = 0; i < Object.getOwnPropertyNames(allUpgrades).length; i++) {
       <li>
         <a href="javascript:apps.shiftorium.showUpgrade(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[` + i + `]])">` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + `</a>
       </li>`
+     );
   }
    console.log("Added " + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + " to shiftorium list");
 }
