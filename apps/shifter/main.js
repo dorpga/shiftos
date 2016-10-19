@@ -34,13 +34,15 @@ apps.shifter = {
       </div>
     `);
     $("#app-" + myId).dialog();
-    for (i = 0; i < Object.getOwnPropertyNames(game.shiftorium.shiftlets).length; i++) {
-     $("#ss-" + myId).append(`
-      <li>
-        <a href="javascript:apps.shifter.showShifter(game.shiftorium.shiftlets[Object.getOwnPropertyNames(game.shiftorium.shiftlets)[` + i + `]])">` + game.shiftorium.shiftlets[Object.getOwnPropertyNames(game.shiftorium.shiftlets)[i]].name + `</a>
-      </li>`
-     );
-      console.log("Added " + game.shiftorium.shiftlets[Object.getOwnPropertyNames(game.shiftorium.shiftlets)[i]].name + " to shifter list");
+    for (i = 0; i < Object.getOwnPropertyNames(allUpgrades).length; i++) {
+      if (games.shiftorium.shiftlets[allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name]) {
+       $("#ss-" + myId).append(`
+        <li>
+          <a href="javascript:apps.shifter.showShifter(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[` + i + `]])">` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + `</a>
+        </li>`
+       );
+        console.log("Added " + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + " to shifter list");
+      }
     }
   }
 }
