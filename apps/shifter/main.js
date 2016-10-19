@@ -20,6 +20,10 @@ apps.shifter = {
                 <ul id='st-` + myId + `' class='shifter-settings'>
                 </ul>
               </td>
+              <td>
+                <div id='sp-` + myId + `' class='shifter-preview'>
+                </div>
+              </td>
             </tr>
           </tbody>
         </table>
