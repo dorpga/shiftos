@@ -35,7 +35,7 @@ apps.shifter = {
     `);
     $("#app-" + myId).dialog();
     for (i = 0; i < Object.getOwnPropertyNames(allUpgrades).length; i++) {
-      if (games.shiftorium.shiftlets[allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name]) {
+      if (game.shiftorium.shiftlets[allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name]) {
        $("#ss-" + myId).append(`
         <li>
           <a href="javascript:apps.shifter.showShifter(allUpgrades[Object.getOwnPropertyNames(allUpgrades)[` + i + `]])">` + allUpgrades[Object.getOwnPropertyNames(allUpgrades)[i]].name + `</a>
